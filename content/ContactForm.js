@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { COLORS, TYPOGRAPHY } from '../lib/styles';
+import { COLORS, TYPOGRAPHY, TEXTSIZE } from '../lib/styles';
 
-import { H3, H6 } from '../components/Typography';
+import { H3, H4, H6 } from '../components/Typography';
 import TitleBlock from '../components/Design/TitleBlock';
 
 const ContactForm = () => (
@@ -29,6 +29,14 @@ const ContactForm = () => (
         <textarea className="form-control" rows="5" name="body" placeholder="Your Message..." />
         <input className="form__button" type="submit" value="Send" style={{ alignSelf: 'flex-end' }} />
       </form>
+
+      <hr style={{ width: '60%', border: `${COLORS.shaders.darker} inset 1px`, marginBottom: '2px' }} />
+
+      <H4 light>Looking more?</H4>
+      <div id="resume">
+        <a href="/static/files/resume.pdf" target="_blank">Download my Resume</a>
+      </div>
+
     </div>
     <style jsx>
       {`
@@ -91,6 +99,22 @@ const ContactForm = () => (
           font-family: ${TYPOGRAPHY.header.subtitle};
           font-size: 1.2rem;
           padding: 8px 12px;
+        }
+
+        #resume {
+          border-radius: 10%;
+          background-color: ${COLORS.palette.secundary}
+
+          margin: 4vmin 0 2vmin 0;
+
+          padding: 2%;
+        }
+
+        #resume a {
+          color: ${COLORS.palette.primary};
+          font-size: ${TEXTSIZE.lg};
+
+          text-decoration: none;
         }
       `}
     </style>
