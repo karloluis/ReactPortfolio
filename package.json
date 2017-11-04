@@ -1,9 +1,9 @@
 {
-  "name": "NextjsBoilerplate",
+  "name": "ReactPortfolio",
   "version": "0.0.1",
-  "description": "Nextjs Boilerplate app with common use styles and components",
+  "description": "Personal Website built on Nextjs",
   "main": "server.js",
-  "repository": "git@github.com:karloluis/ReactBoilerplate.git",
+  "repository": "git@github.com:karloluis/ReactPortfolio.git",
   "author": "Karlo Luis Martinez Martos <karlo.luis.m@gmail.com>",
   "license": "MIT",
   "scripts": {
