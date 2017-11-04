@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { H3, H4, P } from '../components/Typography';
+import { H3, H6, P } from '../components/Typography';
 import TitleBlock from '../components/Design/TitleBlock';
 
 const Blogging = () => (
   <div id="blogging">
     <H3 light><TitleBlock light>Blogging</TitleBlock></H3>
-    <H4 light>Tech, Software, and Career Building articles.</H4>
+    <H6 light>Tech, Software, and Career Building articles.</H6>
     <div id="blogging__content" >
       <P light>
         After years of being self-concious about my writting skills I
