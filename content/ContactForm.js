@@ -30,9 +30,9 @@ const ContactForm = () => (
         <input className="form__button" type="submit" value="Send" style={{ alignSelf: 'flex-end' }} />
       </form>
 
-      <hr style={{ width: '60%', border: `${COLORS.shaders.darker} inset 1px`, marginBottom: '2px' }} />
+      <hr style={{ width: '95%', border: `${COLORS.shaders.darker} inset 1px`, marginBottom: '2px' }} />
 
-      <H4 light>Looking more?</H4>
+      <H4 light>Looking for more?</H4>
       <div id="resume">
         <a href="/static/files/resume.pdf" target="_blank">Download my Resume</a>
       </div>
@@ -41,7 +41,7 @@ const ContactForm = () => (
     <style jsx>
       {`
         #contact {
-          padding: 5vh 0;
+          padding: 0vh 0;
           width: 100%;
         }
 
@@ -59,7 +59,7 @@ const ContactForm = () => (
           display: flex;
           flex-flow: column nowrap;
           align-items: flex-start;
-          width: 45%
+          width: 85%
           margin: 14px 0 24px 0;
         }
 
@@ -92,6 +92,7 @@ const ContactForm = () => (
 
         .form__button:hover {
           background-color: ${COLORS.shaders.primary};
+          color: ${COLORS.palette.secundary};
         }
 
         .form-control {
@@ -105,7 +106,7 @@ const ContactForm = () => (
           border-radius: 10%;
           background-color: ${COLORS.palette.secundary}
 
-          margin: 4vmin 0 2vmin 0;
+          margin: 2vmin 0 3vmin 0;
 
           padding: 2%;
         }
@@ -115,6 +116,14 @@ const ContactForm = () => (
           font-size: ${TEXTSIZE.lg};
 
           text-decoration: none;
+        }
+
+        #resume:hover {
+          background-color: ${COLORS.shaders.primary};
+        }
+
+        #resume:hover a {
+          color: ${COLORS.palette.secundary};
         }
       `}
     </style>

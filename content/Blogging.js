@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { H3, H6, P } from '../components/Typography';
+import { H3, H6, P, Link } from '../components/Typography';
 import TitleBlock from '../components/Design/TitleBlock';
 
 const Blogging = () => (
@@ -15,13 +15,13 @@ const Blogging = () => (
       </P>
 
       <P light>
-        You can find my posts on Medium.
+        You can find my posts on <Link href="https://medium.com/@karloluis/latest">Medium</Link>.
       </P>
     </div>
     <style jsx>
       {`
         #blogging {
-          padding: 5vh 0;
+          padding: 0vh 0;
         }
       `}
     </style>

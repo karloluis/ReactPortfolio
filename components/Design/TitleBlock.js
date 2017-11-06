@@ -20,7 +20,9 @@ const TitleBlock = ({ children, light }) => {
             felx-flow: row nowrap;
             align-items: center;
             justify-content: center;
+
             color: ${color};
+            line-height: 1.2;
           }
 
           span {

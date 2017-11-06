@@ -7,7 +7,7 @@ import H6 from './H6';
 import P from './Paragraph';
 import Strong from './Strong';
 import Italic from './Italic';
-import Link from './Link'
+import Link from './Link';
 
 module.exports = {
   H1,

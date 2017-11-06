@@ -1,9 +1,7 @@
 import React from 'react';
 
 import { H3, P } from '../components/Typography';
-import TitleBlock from '../components/Design/TitleBlock'
-
-import { COLORS, TYPEOGRAPHY, TEXTSIZE } from '../lib/styles';
+import TitleBlock from '../components/Design/TitleBlock';
 
 const Hobbies = () => (
   <div id="hobbies">
@@ -15,18 +13,21 @@ const Hobbies = () => (
         moving around.
 
         Most days I work out at my local gym, whenever possible
-        grab my bicicle and cruise around or commute to nearby shops.
+        grab my bicycle and cruise around or commute to nearby shops.
 
-        But my favorite form of excercise is definitely water polo, it is a
-        challenging sport that relies on technique and physicality as well as
-        teamwork.
+        But my favorite form of exercise is definitely water polo.
+      </P>
+
+      <P>
+        I also like making myself useful in the kitchen cooking healthy recipes
+        and trying new ingredients to make it a special occasion every time.
       </P>
 
     </div>
     <style jsx>
       {`
         #hobbies {
-          padding: 2vh 0;
+          padding: 0vh 0;
         }
       `}
     </style>

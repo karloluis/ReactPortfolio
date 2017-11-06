@@ -8,6 +8,7 @@ import SocialNav from '../components/SocialNav/SocialNav';
 import About from '../content/About';
 import Blogging from '../content/Blogging';
 import Code from '../content/Code';
+import Projects from '../content/Projects';
 import Hobbies from '../content/Hobbies';
 import ContactForm from '../content/ContactForm';
 
@@ -17,36 +18,50 @@ const Home = () => {
   return (
     <div>
       <span id="navigation" className="anchorOffset" />
-      <Navigation />
-      <SocialNav />
+      <CoverBackground image="monochrome-desk.jpg" shader={COLORS.shaders.darker} >
+        <Navigation />
+        <SocialNav />
 
-      <div className="contentBlock">
         <span id="about" className="anchorOffset" />
-        <About />
-      </div>
-
-      <CoverBackground image="monochrome-bench.jpeg" shader={COLORS.shaders.primary}>
-        <div className="contentBlock">
-          <span id="blogging" className="anchorOffset" />
-          <Blogging light/>
+        <div className="content__block">
+          <About />
         </div>
       </CoverBackground>
 
-      <div className="contentBlock">
+      <div className="content__block">
         <span id="code" className="anchorOffset" />
 
         <Code />
       </div>
 
-      <div className="contentBlock">
+      <CoverBackground image="monochrome-bench.jpeg" shader={COLORS.shaders.primary} >
+        <div className="content__block">
+          <span id="blogging" className="anchorOffset" />
+          <Blogging />
+        </div>
+      </CoverBackground>
+
+      <div className="content__block">
+        <span id="projects" className="anchorOffset" />
+        <Projects />
+      </div>
+
+
+      <div style={{ height: '15vh' }}>
+
+      </div>
+
+      {/* <div className="content__block">
         <span id="hobbies" className="anchorOffset" />
 
         <Hobbies />
-      </div>
+      </div> */}
 
-      <CoverBackground image="wood-falling.jpeg" shader={COLORS.shaders.secundary}>
+      <CoverBackground image="wood-falling.jpeg" shader={COLORS.shaders.secundary} >
+        <div className="content__block">
           <span id="contact" className="anchorOffset" />
-          <ContactForm light/>
+          <ContactForm />
+        </div>
       </CoverBackground>
 
       <style jsx>
@@ -58,8 +73,9 @@ const Home = () => {
             visibility: hidden;
           }
 
-          .contentBlock {
-            margin: 1vh 18% 2vh 18%;
+          .content__block {
+            margin: 0 18% 0 18%;
+            padding: 3vh 0 3vh 0;
           }
         `}
       </style>

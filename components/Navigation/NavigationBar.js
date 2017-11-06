@@ -24,9 +24,6 @@ const NavigationBar = () => {
       </div>
 
       <div className="navbar__area">
-        <Link href="#about">
-          <a className="navLink">About</a>
-        </Link>
 
         <Link href="#code">
           <a className="navLink">Code</a>
@@ -36,9 +33,13 @@ const NavigationBar = () => {
           <a className="navLink">Blogging</a>
         </Link>
 
-        <Link href="#hobbies">
-          <a className="navLink">Hobbies</a>
+        <Link href="#projects">
+          <a className="navLink">Projects</a>
         </Link>
+
+        {/* <Link href="#hobbies">
+          <a className="navLink">Hobbies</a>
+        </Link> */}
 
         <Link href="#contact">
           <a className="navLink">Contact</a>
