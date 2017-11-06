@@ -8,7 +8,7 @@ const Link = ({ href, target, children, download, media, rel, type, style }) => 
     <a
       href={href}
       target={target}
-      download={download}
+      // download={download}
       media={media}
       rel={rel}
       type={type}
