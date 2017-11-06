@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { COLORS } from '../lib/styles';
+
 import { H3, H6, P, Link } from '../components/Typography';
 import TitleBlock from '../components/Design/TitleBlock';
 
@@ -26,19 +28,26 @@ const Code = () => (
     <div className="code__content" >
       <P>
         There are a tools and languages that I have come to rely on heavily.
-        Listed bellow are those that I am most familiar with and proficient in.
+        Listed bellow are those that I am most proficient and familiar with.
         Most of which I use daily to be productive and do some amazing work.
       </P>
 
     </div>
 
     <div id="code__tech">
-      <img className="code__tech--image" src="/static/images/loader-reverse.svg"/>
-      <img className="code__tech--image" src="/static/images/loader-reverse.svg"/>
-      <img className="code__tech--image" src="/static/images/loader-reverse.svg"/>
-      <img className="code__tech--image" src="/static/images/loader-reverse.svg"/>
-      <img className="code__tech--image" src="/static/images/loader-reverse.svg"/>
-      <img className="code__tech--image" src="/static/images/loader-reverse.svg"/>
+      <i className="devicon-javascript-plain code__tech--image" />
+      <i className="devicon-python-plain-wordmark code__tech--image" />
+      <i className="devicon-nodejs-plain-wordmark code__tech--image" />
+      <i className="devicon-express-original-wordmark code__tech--image" />
+      <img className="" src="/static/images/nextjs.svg" alt="nextjs" style={{ width: '12vmin' }} />
+      <i className="devicon-react-original-wordmark code__tech--image" />
+      <i className="devicon-mongodb-plain-wordmark code__tech--image" />
+      <img className="" src="/static/images/graphql.svg" alt="nextjs" style={{ width: '9vmin' }} />
+      <i className="devicon-sass-original code__tech--image" />
+      <i className="devicon-git-plain-wordmark code__tech--image" />
+      <i className="devicon-heroku-line-wordmark code__tech--image" />
+      <i className="devicon-atom-original-wordmark code__tech--image" />
+      <i className="devicon-react-original-wordmark code__tech--image" />
     </div>
 
     <div className="code__content">
@@ -59,13 +68,15 @@ const Code = () => (
           display: flex;
           flex-flow: row wrap;
           justify-content: space-around;
-          width: 40vw;
+          align-items: center;
+
+
+          font-size: 83px;
+          color: #7C7F7D;
         }
 
         .code__tech--image {
-          margin: 3vmin;
-          height: 10vmin;
-          width: 10mvin;
+          margin: 3vmin 4vmin;
         }
       `}
     </style>

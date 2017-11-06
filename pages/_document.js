@@ -19,7 +19,9 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
+          {/* Icons */}
           <script src="https://use.fontawesome.com/ef9a7eb4b8.js" />
+          <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
 
           <link rel="stylesheet" href="/static/css/base.css" />
           <link href="https://fonts.googleapis.com/css?family=Cairo:400,600,700|Cutive+Mono|Exo+2:400,600,600i,700|Great+Vibes" rel="stylesheet" />
