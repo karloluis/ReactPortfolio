@@ -47,7 +47,6 @@ const Code = () => (
       <i className="devicon-git-plain-wordmark code__tech--image" />
       <i className="devicon-heroku-line-wordmark code__tech--image" />
       <i className="devicon-atom-original-wordmark code__tech--image" />
-      <i className="devicon-react-original-wordmark code__tech--image" />
     </div>
 
     <div className="code__content">
