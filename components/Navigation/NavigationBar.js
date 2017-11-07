@@ -10,9 +10,8 @@ import { COLORS, TEXTSIZE, SPACING, TYPOGRAPHY } from '../../lib/styles';
 const NavigationBar = () => {
   return (
     <nav id="navbar">
-      <div className="navbar__area">
-
-      </div>
+      {/* <div className="navbar__area">
+      </div> */}
       <div className="navbar__area">
         <Link href="/">
           <H3>
@@ -29,17 +28,13 @@ const NavigationBar = () => {
           <a className="navLink">Code</a>
         </Link>
 
-        <Link href="#blogging">
-          <a className="navLink">Blogging</a>
+        <Link href="#life">
+          <a className="navLink">Life</a>
         </Link>
 
         <Link href="#projects">
           <a className="navLink">Projects</a>
         </Link>
-
-        {/* <Link href="#hobbies">
-          <a className="navLink">Hobbies</a>
-        </Link> */}
 
         <Link href="#contact">
           <a className="navLink">Contact</a>
@@ -51,7 +46,7 @@ const NavigationBar = () => {
           #navbar {
             top: 0;
             width: calc(100% - 2*${SPACING.xl});
-            padding: ${SPACING.xl} ${SPACING.xl} ${SPACING.md} ${SPACING.xl};
+            padding: ${SPACING.lg} ${SPACING.xl} ${SPACING.md} ${SPACING.xl};
             font-size: ${TEXTSIZE.nav};
             display: flex;
             flex-direction: column;
@@ -92,10 +87,6 @@ const NavigationBar = () => {
 
             color: ${COLORS.texts.light};
             background-color: ${COLORS.palette.primary};
-          }
-
-          img {
-            border-radius: 30%;
           }
        `}
       </style>

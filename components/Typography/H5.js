@@ -12,11 +12,11 @@ const H5 = ({ children, light, style }) => {
         {`
           h5 {
             font-family: ${TYPOGRAPHY.header.title};
-            font-size: ${TEXTSIZE.xl};
+            font-size: ${TEXTSIZE.lg};
             color: ${color};
             line-height: 1.6;
             margin: .65rem 0 .50rem 0;
-            font-weight: 400;
+            font-weight: 600;
           }
         `}
       </style>

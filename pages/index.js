@@ -6,13 +6,12 @@ import Navigation from '../components/Navigation/NavigationBar';
 import SocialNav from '../components/SocialNav/SocialNav';
 
 import About from '../content/About';
-import Blogging from '../content/Blogging';
 import Code from '../content/Code';
+import Life from '../content/Life';
 import Projects from '../content/Projects';
-import Hobbies from '../content/Hobbies';
 import ContactForm from '../content/ContactForm';
 
-import { COLORS, SPACING } from '../lib/styles';
+import { COLORS } from '../lib/styles';
 
 const Home = () => {
   return (
@@ -36,8 +35,8 @@ const Home = () => {
 
       <CoverBackground image="monochrome-bench.jpeg" shader={COLORS.shaders.primary} >
         <div className="content__block">
-          <span id="blogging" className="anchorOffset" />
-          <Blogging />
+          <span id="life" className="anchorOffset" />
+          <Life />
         </div>
       </CoverBackground>
 
@@ -45,17 +44,6 @@ const Home = () => {
         <span id="projects" className="anchorOffset" />
         <Projects />
       </div>
-
-
-      <div style={{ height: '15vh' }}>
-
-      </div>
-
-      {/* <div className="content__block">
-        <span id="hobbies" className="anchorOffset" />
-
-        <Hobbies />
-      </div> */}
 
       <CoverBackground image="wood-falling.jpeg" shader={COLORS.shaders.secundary} >
         <div className="content__block">

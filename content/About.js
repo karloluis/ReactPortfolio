@@ -6,11 +6,17 @@ import TitleBlock from '../components/Design/TitleBlock';
 
 const About = () => (
   <div id="about">
+
     <H3 light><TitleBlock light>About</TitleBlock></H3>
-    <H6 style={{ textAlign: 'center' }} light>
-      Hello, my name is Karlo Martinez and I am a Fullstack Engineer
-      based in San Juan, Puerto Rico.
-    </H6>
+    <div className="about__quote">
+      <img id="clip" src="/static/images/Me_.jpg" alt="Karlo Martinez" />
+      <div className="about__quote--content" >
+        <H6 style={{ textAlign: 'center' }} light>
+          Hello, my name is Karlo Martinez and I am a Fullstack Engineer
+          based in San Juan, Puerto Rico.
+        </H6>
+      </div>
+    </div>
 
     <P light>
       I am fully commited to fullstack development, but my strength lies on the
@@ -22,25 +28,28 @@ const About = () => (
       software.
     </P>
 
-    <P light>
-      When I am not in front of the keyboard I like to keep active and
-      moving around.
-
-      Most days I work out at my local gym, whenever possible
-      grab my bicycle and cruise around or commute to nearby shops.
-
-      But my favorite form of exercise is definitely water polo.
-    </P>
-
-    <P light>
-      I also like making myself useful in the kitchen cooking healthy recipes
-      and trying new ingredients to make it a special occasion every time.
-    </P>
-
     <style jsx>
       {`
         #about {
           padding: 2vh 0;
+        }
+
+        .about__quote {
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          justify-content: space-around;
+          margin: 5vh 0;
+        }
+
+        .about__quote--content {
+          width: 60%;
+        }
+
+        #clip {
+          width: 30%;
+          border-radius: 47%;
+          transform: scaleX(-1);
         }
       `}
     </style>

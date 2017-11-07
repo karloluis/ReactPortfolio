@@ -14,6 +14,7 @@ const Paragraph = ({ children, light, style }) => {
             margin: 1rem 0 1.2rem 0;
             font-family: ${TYPOGRAPHY.content};
             font-size: ${TEXTSIZE.md};
+            line-height: 1.4;
             color: ${color};
             text-align: justify;
           }

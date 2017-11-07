@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { H3, H5, H6, P, Link, Italic } from '../components/Typography';
+import { H3, H4, H6, P, Link, Italic } from '../components/Typography';
 import TitleBlock from '../components/Design/TitleBlock';
 
 import { COLORS } from '../lib/styles';
@@ -12,7 +12,7 @@ const Projects = () => (
     <div className="project__entry">
       <div className="project__entry--head">
         <Link href="http://aptogen.herokuapp.com" target="_blank">
-          <H5 style={{  }} >AptoGen</H5>
+          <H4 style={{  }} >AptoGen</H4>
         </Link>
       </div>
       <div className="project__entry--content">
@@ -31,7 +31,7 @@ const Projects = () => (
     <div className="project__entry">
       <div className="project__entry--head">
         <Link href="http://sexycandies.co" target="_blank">
-          <H5 style={{ fontFamily: 'Great Vibes', color: '#b90000' }}>Sexy Candies</H5>
+          <H4 style={{ fontFamily: 'Great Vibes', color: '#b90000' }}>Sexy Candies</H4>
         </Link>
       </div>
       <div className="project__entry--content">
@@ -52,7 +52,7 @@ const Projects = () => (
     <div className="project__entry">
       <div className="project__entry--head">
         <Link href="#" target="_blank">
-          <H5>Distribuidora Boricua</H5>
+          <H4>Distribuidora Boricua</H4>
         </Link>
         <H6 style={{ color: COLORS.links.normal }} ><Italic>Coming Soon!</Italic></H6>
       </div>
@@ -69,7 +69,6 @@ const Projects = () => (
           <Link href="#"> Facebook Page </Link>.
         </P> */}
       </div>
-
     </div>
 
     <style jsx>

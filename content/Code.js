@@ -2,7 +2,7 @@ import React from 'react';
 
 import { COLORS } from '../lib/styles';
 
-import { H3, H6, P, Link } from '../components/Typography';
+import { H3, H5, P, Link } from '../components/Typography';
 import TitleBlock from '../components/Design/TitleBlock';
 
 const Code = () => (
@@ -24,14 +24,15 @@ const Code = () => (
       </P>
     </div>
 
-    <H6><TitleBlock>Tech</TitleBlock></H6>
-    <div className="code__content" >
-      <P>
-        There are a tools and languages that I have come to rely on heavily.
-        Listed bellow are those that I am most proficient and familiar with.
-        Most of which I use daily to be productive and do some amazing work.
-      </P>
-
+    <div id="tech">
+      <H5><TitleBlock>Tech</TitleBlock></H5>
+      <div className="code__content" >
+        <P>
+          There are a tools and languages that I have come to rely on heavily.
+          Listed bellow are those that I am most proficient and familiar with.
+          Most of which I use daily to be productive and do some amazing work.
+        </P>
+      </div>
     </div>
 
     <div id="code__tech">
@@ -60,6 +61,10 @@ const Code = () => (
       {`
         #code {
           padding: 0vh 0;
+        }
+
+        #tech {
+          margin: 4vh 0;
         }
 
         #code__tech {
