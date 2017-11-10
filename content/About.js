@@ -15,18 +15,18 @@ const About = () => (
           Hello, my name is Karlo Martinez and I am a Fullstack Engineer
           based in San Juan, Puerto Rico.
         </H6>
+
+        <P light>
+          I am fully commited to fullstack development, but my strength lies on the
+          back end, where business logic and computation happens most heavily.
+        </P>
+
+        <P light>
+          Also looking for opportunities to grow professionally and collaborate on
+          software.
+        </P>
       </div>
     </div>
-
-    <P light>
-      I am fully commited to fullstack development, but my strength lies on the
-      back end, where business logic and computation happens most heavily.
-    </P>
-
-    <P light>
-      Also looking for opportunities to grow professionally and collaborate on
-      software.
-    </P>
 
     <style jsx>
       {`
@@ -47,7 +47,8 @@ const About = () => (
         }
 
         #clip {
-          width: 30%;
+          width: 40%;
+          margin: 0 2%;
           border-radius: 47%;
           transform: scaleX(-1);
         }
