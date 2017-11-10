@@ -69,6 +69,9 @@ const NavigationBar = () => {
             font-size: ${TEXTSIZE.sm};
             color: ${COLORS.texts.light};
             background-color: ${COLORS.palette.primary};
+
+            border: none;
+            border-radius: 10%;
           }
 
           .navLink:hover, .navLink:focus {
@@ -87,6 +90,9 @@ const NavigationBar = () => {
 
             color: ${COLORS.texts.light};
             background-color: ${COLORS.palette.primary};
+
+            border: none;
+            border-radius: 10%;
           }
        `}
       </style>
