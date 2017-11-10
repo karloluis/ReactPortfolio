@@ -25,10 +25,10 @@ const Code = () => (
     </div>
 
     <div id="tech">
-      <H5><TitleBlock>Tech</TitleBlock></H5>
+      {/* <H5><TitleBlock>Tech</TitleBlock></H5> */}
       <div className="code__content" >
         <P>
-          There are a tools and languages that I have come to rely on heavily.
+          There are tools and languages that I have come to rely on heavily.
           Listed bellow are those that I am most proficient and familiar with.
           Most of which I use daily to be productive and do some amazing work.
         </P>

@@ -27,7 +27,7 @@ const Life = () => (
     </div>
 
     <div id="blog">
-      <H5 light><TitleBlock light>Blog</TitleBlock></H5>
+      {/* <H5 light><TitleBlock light>Blog</TitleBlock></H5> */}
       <div className="blog__quote">
         <H6 light style={{ width: '60%', margin: '0 auto', textAlign: 'center' }}>
           Tech, Software, and Career Building articles.
