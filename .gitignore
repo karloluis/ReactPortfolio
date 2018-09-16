@@ -61,4 +61,7 @@ yarn.lock
 .env
 
 
+.git
+
+
 *.DS_Store
